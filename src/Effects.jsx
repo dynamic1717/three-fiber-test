@@ -1,6 +1,5 @@
 import {
   EffectComposer,
-  SSR,
   Bloom,
   Vignette,
   SMAA,
@@ -8,17 +7,17 @@ import {
 import React from 'react'
 
 export default function Effects() {
-  const props = {
-    enabled: true,
-    temporalResolve: true,
-    STRETCH_MISSED_RAYS: true,
-    USE_MRT: true,
-    USE_NORMALMAP: true,
-    USE_ROUGHNESSMAP: true,
-    ENABLE_JITTERING: true,
-    ENABLE_BLUR: true,
-    DITHERING: false,
-  }
+  // const props = {
+  //   enabled: true,
+  //   temporalResolve: true,
+  //   STRETCH_MISSED_RAYS: true,
+  //   USE_MRT: true,
+  //   USE_NORMALMAP: true,
+  //   USE_ROUGHNESSMAP: true,
+  //   ENABLE_JITTERING: true,
+  //   ENABLE_BLUR: true,
+  //   DITHERING: false,
+  // }
   return (
     <EffectComposer disableNormalPass>
       {/* <SSR /> */}

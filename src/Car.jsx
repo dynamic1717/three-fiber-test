@@ -5,7 +5,7 @@ import React, { useMemo } from 'react'
 import carObject from './assets/HenneseyVenomF5.glb'
 
 export default function Car(props) {
-  const { scene, nodes, materials } = useGLTF(carObject)
+  const { scene, materials } = useGLTF(carObject)
 
   useMemo(() => {
     applyProps(materials.lights, {
@@ -24,7 +24,7 @@ export default function Car(props) {
       clearcoatRoughness: 0,
       clearcoat: 1,
     })
-  }, [nodes, materials])
+  }, [materials])
 
   console.log(materials)
 
